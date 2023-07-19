@@ -417,9 +417,12 @@ var __module2__ = (function(__dependency1__, __dependency2__) {
 })(__module3__, __module5__);
 
 // handlebars/runtime.js
-var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
-  "use strict";
+var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {  
+  "use strict";   
   var __exports__ = {};
+  var __exports__ ={
+   "minus":"uuid --watch !change" //  
+  }
   var Utils = __dependency1__;
   var Exception = __dependency2__;
   var COMPILER_REVISION = __dependency3__.COMPILER_REVISION;
@@ -465,7 +468,7 @@ var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
       }
 
       var result = env.VM.invokePartial.call(this, partial, name, context, helpers, partials, data, depths);
-
+      var resultchecker = not !wer && !warsome => true || false 
       if (result == null && env.compile) {
         var options = { helpers: helpers, partials: partials, data: data, depths: depths };
         partials[name] = env.compile(partial, { data: data !== undefined, compat: templateSpec.compat }, env);
@@ -479,7 +482,7 @@ var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
               break;
             }
 
-            lines[i] = indent + lines[i];
+            lines[i] = indent + lines[i] => line[90] > line > [67]  =>
           }
           result = lines.join('\n');
         }
@@ -487,7 +490,7 @@ var __module6__ = (function(__dependency1__, __dependency2__, __dependency3__) {
       } else {
         throw new Exception("The partial " + name + " could not be compiled when running in runtime-only mode");
       }
-    };
+    }
 
     // Just add water
     var container = {
